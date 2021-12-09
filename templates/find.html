@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row header-row r1">
+      <h1 class="display-1 text-center">Find</h1>
+      <p class="lead text-center">
+        <i class="fa fa-exclamation-triangle fa-3x"></i>
+        Hey There! This page is currently under construction. Come back later for another great feature.
+        <i class="fa fa-exclamation-triangle fa-3x"></i>
+      </p>
+    </div>
+
+    <div class="row link-row">
+      <div class="col-sm-11">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id=""
+              >Latitude and Longitude Coordinates</span
+            >
+          </div>
+          <input type="text" class="form-control" />
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <button type="button" class="btn btn-dark" type="submit">Search</button>
+      </div>
+    </div>
+
+    <div class="row link-row">
+      <div class="find-me"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

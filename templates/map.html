@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row header-row r1">
+      <h1 class="display-1 text-center">Map</h1>
+      <p class="lead">
+        Please explore our map of the Atlanta restaurants. Each marker contains
+        the information for its restaurant, so click a marker if you are interested!
+      </p>
+    </div>
+    <div class="row link-row">
+      <div class="col-md-12">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../static/js/maps.js"></script>
+<!-- Icons -->
+<script src="../static/js/leaflet.extra-markers.min.js"></script>
+
+
+{% endblock %}

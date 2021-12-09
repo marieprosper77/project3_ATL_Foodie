@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row header-row r1">
+                    <h1 class="display-1 text-center">Cuisines</h1>
+                    <p class="lead text-center">Select one or more zip codes to discover all cuisine types for that area. The top ten most popular are also identified. Or take a peek at cuisine type counts for all of Atlanta!</p> 
+                </div>
+                <div class="row link-row justify-content-center">
+                    <h4 class="text-center">Atlanta Zip Codes</h4>
+                    <select id="zipSelector" multiple></select>
+                    <hr>
+                </div>
+                <div class="row link-row justify-content-center">
+                    <div class="col-md-7">
+                        <div id="dot-plot"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="bar"></div>
+                    </div>
+                </div>
+                <div class="row link-row justify-content-center">
+                    <div class="col-md-12">
+                        <hr>
+                        <div id="all-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../static/js/plots.js"></script>
+{% endblock %}
